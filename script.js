@@ -201,23 +201,6 @@ function displayProperties() {
 }
 
 
-function generatePDF() {
-            // Choose the element that you want to convert to PDF
-            const element = document.getElementById('page-content');
-
-            // Define the options for the PDF generation
-            const options = {
-                margin: 10,
-                filename: 'downloaded-page.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            // Use html2pdf to generate and save the PDF
-            html2pdf().set(options).from(element).save();
-        }
-
 // ===== Property Details Modal =====
 function showPropertyDetails(property) {
   const modal = document.createElement("div");
