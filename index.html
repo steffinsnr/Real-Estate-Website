@@ -8,7 +8,11 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">NS<span>NR</span></div>
+      <div class="logo" aria-label="N'snr Ultra Luxury">
+        <span class="logo-anchor">N</span>
+        <span class="logo-apostrophe"></span>
+        <span class="logo-snr">snr</span>
+      </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#properties">Properties</a></li>
@@ -20,9 +24,13 @@
 
     <section id="home" class="hero-section">
       <div class="hero-content">
-        <h1>Welcome to NSNR Real Estate</h1>
-        <h2>Find Your Perfect Home in Kenya</h2>
-        <p>Discover exceptional properties across Kenya's most desirable locations. From luxury apartments in Nairobi to beachfront villas in Mombasa, we offer premium real estate solutions tailored to your lifestyle and investment goals.</p>
+        <h1>NSNR Sky Residences</h1>
+        <h2>"Where Luxury Meets Modern Living"</h2>
+        <p>Elevated penthouses and signature lofts crafted for discerning buyers. Explore curated 3D visuals, immersive interiors, and concierge-level services before you ever step on-site.</p>
+        <div class="hero-actions">
+          <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Viewing</button>
+          <button class="cta-btn secondary" onclick="window.open('#', '_blank')">Download Brochure</button>
+        </div>
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-number">500+</span>
@@ -37,7 +45,23 @@
             <span class="stat-label">Happy Clients</span>
           </div>
         </div>
-        <button class="cta-btn" onclick="document.getElementById('properties').scrollIntoView({behavior: 'smooth'})">Explore Properties</button>
+      </div>
+    </section>
+
+    <section class="visuals-section">
+      <div class="visuals-container">
+        <div class="visuals-header">
+          <h3>See Every Angle Before You Visit</h3>
+          <p>Professional architectural visuals let you preview the residence across every moment of the day.</p>
+        </div>
+        <div class="visuals-grid">
+          <div class="visual-card">Professional architectural renders & 3D imagery</div>
+          <div class="visual-card">Day &amp; night facade perspectives</div>
+          <div class="visual-card">Interior mockups for every layout</div>
+          <div class="visual-card">Aerial views showcasing skyline context</div>
+          <div class="visual-card">360&deg; panorama lifestyle shots</div>
+          <div class="visual-card">Virtual staging for bespoke décor</div>
+        </div>
       </div>
     </section>
 
@@ -48,17 +72,14 @@
           <select id="location-filter">
             <option value="">All Locations</option>
             <option value="Nairobi">Nairobi</option>
-            <option value="Kilimani">Kilimani</option>
-            <option value="Westlands">Westlands</option>
-            <option value="Naivasha">Naivasha</option>
-            <option value="Mombasa">Mombasa</option>
+            <option value="Kileleshwa">Kileleshwa</option>
+            <option value="Runda">Runda</option>
+            <option value="Muthaiga">Muthaiga</option>
           </select>
           <select id="type-filter">
             <option value="">All Types</option>
-            <option value="Villa">Villa</option>
             <option value="Apartment">Apartment</option>
-            <option value="Townhouse">Townhouse</option>
-            <option value="Bungalow">Bungalow</option>
+            <option value="Loft">Loft</option>
           </select>
           <select id="price-filter">
             <option value="">All Prices</option>
@@ -68,6 +89,60 @@
             <option value="80000000+">Above KSh 80M</option>
           </select>
           <button id="search-btn" class="search-btn">Search Properties</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="value-highlights">
+      <div class="value-container">
+        <div class="value-card">
+          <h3>Amenities</h3>
+          <ul>
+            <li>Swimming pool &amp; infinity deck</li>
+            <li>Private clubhouse &amp; lounge</li>
+            <li>Signature gym &amp; wellness studio</li>
+            <li>Smart home automation suites</li>
+            <li>24/7 concierge &amp; biometric security</li>
+            <li>Designer landscaped gardens</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <h3>Location Benefits</h3>
+          <ul>
+            <li>Moments from premium malls</li>
+            <li>Access to top international schools</li>
+            <li>Dual carriage access roads</li>
+            <li>Quiet, green neighborhoods</li>
+            <li>Proximity to embassies &amp; business hubs</li>
+            <li>Private hospital network nearby</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="virtual-experience">
+      <div class="virtual-grid">
+        <div class="virtual-card">
+          <h3>360° Virtual Tour</h3>
+          <div class="virtual-frame virtual-placeholder">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Virtual tour preview">
+            <button class="virtual-cta" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Request Private Tour Link</button>
+          </div>
+          <p>Walk through penthouses, amenities, and social spaces via an exclusive 360° link delivered by our concierge team.</p>
+        </div>
+        <div class="virtual-card">
+          <h3>Interactive Location</h3>
+          <div class="virtual-frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.35932766993!2d36.7819503!3d-1.2647606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173fd214d2ad%3A0x60cccf72d23b712c!2sKileleshwa%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1700000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p>Pinpoint the residence in relation to global embassies, schools, malls, and arterial roads.</p>
+        </div>
+        <div class="virtual-card">
+          <h3>Zoomable Site Plan</h3>
+          <div class="virtual-frame site-plan">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="Site plan">
+          </div>
+          <p>Explore tower positioning, amenity decks, and access control points with a high-res plan.</p>
         </div>
       </div>
     </section>
@@ -113,13 +188,7 @@
               <strong>Email:</strong> info@nsnrkenya.co.ke
             </div>
             <div class="contact-item">
-              <strong>Sales:</strong> sales@nsnrkenya.co.ke
-            </div>
-            <div class="contact-item">
-              <strong>Support:</strong> support@nsnrkenya.co.ke
-            </div>
-            <div class="contact-item">
-              <strong>Address:</strong> Westlands Business Center, Nairobi
+              <strong>Website:</strong> www.nsnrkenya.co.ke
             </div>
             <div class="contact-item">
               <strong>Hours:</strong> Mon-Fri: 8AM-6PM, Sat: 9AM-4PM
@@ -144,6 +213,28 @@
       </div>
     </section>
 
+    <section class="testimonials-section">
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <p class="quote">“The 360° tour convinced us before we even flew in. The concierge handled everything seamlessly.”</p>
+          <span class="author">A. Kamau — Penthouse Buyer</span>
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">“Investor-ready documentation, secure returns, and architectural quality that stands out in Nairobi.”</p>
+          <span class="author">S. Patel — Private Investor</span>
+        </div>
+        <div class="testimonial-card developer">
+          <h3>NSNR Developments</h3>
+          <p>15+ years crafting premium towers across Westlands, Kileleshwa, and Runda. ISO-certified processes and a portfolio spanning 500 high-end residences.</p>
+          <div class="badges">
+            <span>LEED-aligned</span>
+            <span>RIBA Partners</span>
+            <span>Concierge 24/7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-content">
         <div class="footer-section">
@@ -151,19 +242,8 @@
           <p>Your trusted partner in finding the perfect property in Kenya.</p>
         </div>
         <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
           <h3>Follow Us</h3>
           <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
             <a href="#">Instagram</a>
             <a href="#">LinkedIn</a>
           </div>

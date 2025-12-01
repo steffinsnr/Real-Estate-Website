@@ -12,10 +12,24 @@ const properties = [
     image: "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80",
     bedroomPhoto: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
     compoundPhoto: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+    ],
+    bathroomPhotos: [
+      "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+    ],
     title: "Modern Family Villa",
-    location: "Nairobi, Kenya",
+    location: "Runda",
     price: "KSh 65,000,000",
-    type: "Villa",
+    type: "Apartment",
     bedrooms: 4,
     bathrooms: 3,
     area: "250 sqm",
@@ -25,8 +39,15 @@ const properties = [
     image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
     bedroomPhoto: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
     compoundPhoto: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523419409543-0c1df022bddb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+    ],
     title: "Luxury Apartment",
-    location: "Kilimani, Nairobi",
+    location: "Kileleshwa",
     price: "KSh 39,000,000",
     type: "Apartment",
     bedrooms: 3,
@@ -38,10 +59,17 @@ const properties = [
     image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
     bedroomPhoto: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
     compoundPhoto: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+    ],
     title: "Lakeview Bungalow",
-    location: "Naivasha, Kenya",
+    location: "Muthaiga",
     price: "KSh 72,000,000",
-    type: "Bungalow",
+    type: "Apartment",
     bedrooms: 5,
     bathrooms: 4,
     area: "300 sqm",
@@ -49,25 +77,39 @@ const properties = [
   },
   {
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-    bedroomPhoto: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-    compoundPhoto: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    bedroomPhoto: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+    compoundPhoto: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80"
+    ],
     title: "Beachfront Villa",
-    location: "Mombasa, Kenya",
+    location: "Nairobi",
     price: "KSh 85,000,000",
-    type: "Villa",
+    type: "Apartment",
     bedrooms: 6,
     bathrooms: 5,
     area: "400 sqm",
-    features: ["Beach Access", "Pool", "Ocean View"]
+    features: ["Private Chef Kitchen", "Infinity Pool", "Sky Lounge"]
   },
   {
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
-    bedroomPhoto: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-    compoundPhoto: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    bedroomPhoto: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
+    compoundPhoto: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+    ],
     title: "Urban Loft Apartment",
-    location: "Kilimani, Nairobi",
+    location: "Nairobi",
     price: "KSh 42,000,000",
-    type: "Apartment",
+    type: "Loft",
     bedrooms: 2,
     bathrooms: 2,
     area: "150 sqm",
@@ -75,12 +117,22 @@ const properties = [
   },
   {
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-    bedroomPhoto: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-    compoundPhoto: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    bedroomPhoto: "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=800&q=80",
+    compoundPhoto: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523419409543-0c1df022bddb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80"
+    ],
+    bathroomPhotos: [
+      "https://images.unsplash.com/photo-1523419409543-0c1df022bddb?auto=format&fit=crop&w=800&q=80"
+    ],
     title: "Modern Loft Space",
-    location: "Kilimani, Nairobi",
+    location: "Kileleshwa",
     price: "KSh 38,000,000",
-    type: "Apartment",
+    type: "Loft",
     bedrooms: 1,
     bathrooms: 1,
     area: "120 sqm",
@@ -165,9 +217,19 @@ function showPropertyDetails(property) {
     padding: 20px;
   `;
 
+  const galleryImages = property.gallery?.length
+    ? property.gallery
+    : [property.image, property.bedroomPhoto, property.compoundPhoto].filter(Boolean);
+  const dotsMarkup = galleryImages
+    .map(
+      (_, idx) =>
+        `<span class="gallery-dot ${idx === 0 ? "active" : ""}" data-index="${idx}"></span>`
+    )
+    .join("");
+
   modal.innerHTML = `
     <div style="
-      background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+      background: linear-gradient(140deg, #050505, #1a1a1a);
       border-radius: 20px;
       padding: 30px;
       max-width: 700px;
@@ -175,48 +237,34 @@ function showPropertyDetails(property) {
       max-height: 80vh;
       overflow-y: auto;
       position: relative;
-      border: 2px solid #444;
+      border: 2px solid #c6a667;
     ">
       <button onclick="this.parentElement.parentElement.remove()" style="
         position: absolute;
         top: 15px;
         right: 15px;
-        background: #ff6b35;
+        background: #c6a667;
         border: none;
         border-radius: 50%;
         width: 30px;
         height: 30px;
         cursor: pointer;
         font-size: 16px;
-        color: white;
-      ">×</button>
+        color: #000;
+      " aria-label="Close property details">×</button>
       
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
-        <img src="${property.image}" alt="${property.title}" style="
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 15px;
-        ">
-        <img src="${property.bedroomPhoto}" alt="Bedroom" style="
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 15px;
-        ">
+      <div class="modal-gallery">
+        <button class="gallery-btn gallery-prev" aria-label="Previous image">‹</button>
+        <img class="gallery-image" src="${galleryImages[0]}" alt="${property.title}">
+        <button class="gallery-btn gallery-next" aria-label="Next image">›</button>
+      </div>
+      <div class="gallery-dots">
+        ${dotsMarkup}
       </div>
       
-      <img src="${property.compoundPhoto}" alt="Compound" style="
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 15px;
-        margin-bottom: 20px;
-      ">
-      
-      <h2 style="color: #ff6b35; margin-bottom: 15px;">${property.title}</h2>
+      <h2 style="color: #c6a667; margin-bottom: 15px;">${property.title}</h2>
       <p style="margin-bottom: 10px;">📍 ${property.location}</p>
-      <p style="font-size: 1.2rem; color: #ff6b35; font-weight: bold; margin-bottom: 20px;">${property.price}</p>
+      <p style="font-size: 1.2rem; color: #ffffff; font-weight: bold; margin-bottom: 20px;">${property.price}</p>
       
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px;">
         <div style="text-align: center; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px;">
@@ -232,15 +280,24 @@ function showPropertyDetails(property) {
           <div>${property.area}</div>
         </div>
       </div>
-      
-      <h3 style="color: #ff6b35; margin-bottom: 10px;">Features:</h3>
+
+      ${property.bathrooms === 3 && property.bathroomPhotos?.length === 3 ? `
+        <h3 style="color: #ffffff; margin-bottom: 10px;">Bathroom Gallery</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 20px;">
+          ${property.bathroomPhotos.map(photo => `
+            <img src="${photo}" alt="Bathroom" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(198, 166, 103, 0.4);" />
+          `).join('')}
+        </div>
+      ` : ''}
+
+      <h3 style="color: #ffffff; margin-bottom: 10px;">Features:</h3>
       <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-        ${property.features.map(feature => `<span style="background: rgba(255,107,53,0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.9rem;">${feature}</span>`).join('')}
+        ${property.features.map(feature => `<span style="background: rgba(198,166,103,0.15); padding: 5px 10px; border-radius: 15px; font-size: 0.9rem; border: 1px solid rgba(198,166,103,0.4);">${feature}</span>`).join('')}
       </div>
       
       <button onclick="contactAboutProperty('${property.title}')" style="
-        background: #ff6b35;
-        color: white;
+        background: linear-gradient(120deg, #c6a667, #ad8d4f);
+        color: #000;
         padding: 12px 25px;
         border: none;
         border-radius: 25px;
@@ -248,13 +305,45 @@ function showPropertyDetails(property) {
         cursor: pointer;
         width: 100%;
         transition: background 0.3s;
-      " onmouseover="this.style.background='#e55a2b'" onmouseout="this.style.background='#ff6b35'">
+      " onmouseover="this.style.background='#c6a667'" onmouseout="this.style.background='linear-gradient(120deg, #c6a667, #ad8d4f)'">
         Contact About This Property
       </button>
     </div>
   `;
 
   document.body.appendChild(modal);
+  initModalGallery(modal, galleryImages);
+}
+
+function initModalGallery(modalElement, images) {
+  if (!images.length) return;
+
+  const imageEl = modalElement.querySelector(".gallery-image");
+  const prevBtn = modalElement.querySelector(".gallery-prev");
+  const nextBtn = modalElement.querySelector(".gallery-next");
+  const dots = Array.from(modalElement.querySelectorAll(".gallery-dot"));
+  let currentIndex = 0;
+
+  if (images.length === 1) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    dots.forEach(dot => (dot.style.display = "none"));
+    return;
+  }
+
+  const updateGallery = (newIndex) => {
+    currentIndex = (newIndex + images.length) % images.length;
+    imageEl.src = images[currentIndex];
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle("active", idx === currentIndex);
+    });
+  };
+
+  prevBtn.addEventListener("click", () => updateGallery(currentIndex - 1));
+  nextBtn.addEventListener("click", () => updateGallery(currentIndex + 1));
+  dots.forEach(dot =>
+    dot.addEventListener("click", () => updateGallery(Number(dot.dataset.index)))
+  );
 }
 
 // ===== Contact About Property =====
