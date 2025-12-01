@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NSNR Real Estate - Find Your Perfect Home in Kenya</title>
     <link rel="stylesheet" href="style.css" />
-<script src="cdnjs.cloudflare.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
   </head>
-  <body id="page-content">
+  <body>
+    <div id="page-content">
     <nav class="navbar">
       <div class="logo" aria-label="N'snr Ultra Luxury">
         <span class="logo-anchor">N</span>
@@ -238,7 +237,7 @@
         </div>
       </div>
     </section>
-
+  </div>
     <footer>
       <div class="footer-content">
         <div class="footer-section">
@@ -259,5 +258,23 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function generatePDF() {
+            // Choose the element that you want to convert to PDF
+            const element = document.getElementById('page-content');
+
+            // Define the options for the PDF generation
+            const options = {
+                margin: 10,
+                filename: 'downloaded-page.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // Use html2pdf to generate and save the PDF
+            html2pdf().set(options).from(element).save();
+        }
+    </script>
   </body>
 </html>
