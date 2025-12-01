@@ -6,7 +6,7 @@
     <title>NSNR Real Estate - Find Your Perfect Home in Kenya</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="page-content">
     <nav class="navbar">
       <div class="logo" aria-label="N'snr Ultra Luxury">
         <span class="logo-anchor">N</span>
@@ -29,7 +29,7 @@
         <p>Elevated penthouses and signature lofts crafted for discerning buyers. Explore curated 3D visuals, immersive interiors, and concierge-level services before you ever step on-site.</p>
         <div class="hero-actions">
           <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Viewing</button>
-          <button class="cta-btn secondary" onclick="window.open('#', '_blank')">Download Brochure</button>
+          <button class="cta-btn secondary" onclick="generatePDF()">Download Brochure</button>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
