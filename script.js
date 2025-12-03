@@ -1,4 +1,3 @@
-// ===== Responsive Menu Toggle =====
 const mobileMenu = document.getElementById("mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 
@@ -6,7 +5,6 @@ mobileMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// ===== Dynamic Property Cards =====
 const properties = [
   {
     image: "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80",
@@ -143,7 +141,6 @@ const properties = [
 const propertyContainer = document.getElementById("property-container");
 let filteredProperties = [...properties];
 
-// ===== Property Filtering =====
 function filterProperties() {
   const locationFilter = document.getElementById("location-filter").value;
   const typeFilter = document.getElementById("type-filter").value;
@@ -173,7 +170,6 @@ function filterProperties() {
   displayProperties();
 }
 
-// ===== Display Properties =====
 function displayProperties() {
   propertyContainer.innerHTML = '';
   
@@ -200,8 +196,6 @@ function displayProperties() {
   });
 }
 
-
-// ===== Property Details Modal =====
 function showPropertyDetails(property) {
   const modal = document.createElement("div");
   modal.style.cssText = `
@@ -347,20 +341,15 @@ function initModalGallery(modalElement, images) {
   );
 }
 
-// ===== Contact About Property =====
 function contactAboutProperty(propertyTitle) {
   const contactForm = document.getElementById("contact-form");
   const selectElement = contactForm.querySelector("select");
   selectElement.value = "buying";
   
-  // Scroll to contact form
   contactForm.scrollIntoView({ behavior: "smooth" });
-  
-  // Close modal
   document.querySelector("[style*='position: fixed']")?.remove();
 }
 
-// ===== Contact Form Handling =====
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
   
@@ -371,17 +360,12 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
   const interest = this.querySelector("select").value;
   const message = this.querySelector("textarea").value;
   
-  // Show success message
   alert(`Thank you, ${name}! We've received your message about ${interest}. We'll contact you at ${email} soon.`);
-  
-  // Reset form
   this.reset();
 });
 
-// ===== Search Button Event =====
 document.getElementById("search-btn").addEventListener("click", filterProperties);
 
-// ===== Smooth Scrolling for Navigation =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -395,5 +379,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ===== Initialize Properties Display =====
+function downloadBrochure() {
+  try {
+    const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'NSNR-Sky-Residences-Brochure.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading brochure:', error);
+    alert('Unable to download brochure. Please try again later.');
+  }
+}
+
 displayProperties();

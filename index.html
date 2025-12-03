@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NSNR Real Estate - Find Your Perfect Home in Kenya</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    
   </head>
   <body>
-    <div id="page-content">
     <nav class="navbar">
       <div class="logo" aria-label="N'snr Ultra Luxury">
         <span class="logo-anchor">N</span>
@@ -32,7 +29,7 @@
         <p>Elevated penthouses and signature lofts crafted for discerning buyers. Explore curated 3D visuals, immersive interiors, and concierge-level services before you ever step on-site.</p>
         <div class="hero-actions">
           <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Viewing</button>
-          <button class="cta-btn secondary" onclick="generatePDF()">Download Brochure</button>
+          <button class="cta-btn secondary" onclick="downloadBrochure()">Download Brochure</button>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -237,7 +234,7 @@
         </div>
       </div>
     </section>
-  </div>
+
     <footer>
       <div class="footer-content">
         <div class="footer-section">
@@ -247,8 +244,8 @@
         <div class="footer-section">
           <h3>Follow Us</h3>
           <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -258,23 +255,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        function generatePDF() {
-            // Choose the element that you want to convert to PDF
-            const element = document.getElementById('page-content');
-
-            // Define the options for the PDF generation
-            const options = {
-                margin: 10,
-                filename: 'downloaded-page.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            // Use html2pdf to generate and save the PDF
-            html2pdf().set(options).from(element).save();
-        }
-    </script>
   </body>
 </html>
